@@ -1,0 +1,102 @@
+.login-background {
+    background: linear-gradient(135deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    height: 100vh;
+    display: flex;
+    .login-container{
+        background: #fff;
+        border-radius: 16px;
+        width: 340px;
+        height: 450px;
+        margin: auto;
+        .login-content{
+            padding: 10px 20px;
+            .text-login{
+                padding: 15px 0;
+                font-size: 24px;
+                font-weight: 600;
+                text-align: center;
+            }
+            .login-input{
+                margin-bottom: 10px;
+                input{
+                    width: 100%;
+                    box-sizing: border-box;
+                    border: none;
+                    font-size: 1.1rem;
+                    padding-left: 1.3rem;
+                    padding-bottom: 0.8rem;
+                    box-shadow: inset 0px -3px 0px 0px rgba(187,187,187,0.2);
+                }
+                input:focus{
+                    box-shadow: inset 0px -3px 0px 0px rgba(34, 193, 195, 0.7);
+                    outline: none;
+                }
+                .custom-form{
+                    position: relative;
+                    i{
+                        position: absolute;
+                        right: 10px;
+                        top: 32%;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .btn-login{
+                text-align: center;
+                border: none;
+                button{
+                    background: linear-gradient(135deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+                    width:100%;
+                    height: 40px;
+                    color: white;
+                    font-weight: 700;
+                    border: none;
+                    border-radius: 25px;
+                }
+            }
+            .forgot-password{
+                font-size: 12px;
+                margin-top: 10px;
+                display: block;
+            }
+            .login-other{
+                display: block;
+                margin-top: 20px;
+            }
+            .social-app{
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i{
+                    font-size: 30px;
+                    padding: 4px;
+                }
+                .social-app-fb{
+                    color: #fff;
+                    font-size: 25px;
+                    height: 35px;
+                    width: 35px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    background-color:#47649e;
+                    margin-left: 8px;
+                }
+                .social-app-gg{
+                    color: #fff;
+                    font-size: 25px;
+                    height: 35px;
+                    width: 35px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    background-color: #dd4b39;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+}

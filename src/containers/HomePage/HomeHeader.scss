@@ -1,0 +1,264 @@
+:root{
+    --height-home-header-banner: 691px;
+    --height-top-banner: 500px;
+}
+.home-header-container{
+    height: 60px;
+    width: 100%;
+    background: #fff;
+    padding: 0 40px;
+    border-bottom: 1px solid #ccc;
+    .home-header-content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        .left-content{
+            i{
+                font-size: 25px;
+                color:grey;
+                cursor: pointer;
+                flex:1;
+                margin-left: 50px;
+            }
+            width: 25%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            .header-logo{
+                cursor: pointer;
+                height: 65%;
+                width: 80%;
+                background: url("../../assets/Logo.svg") center left no-repeat;
+            }
+        }
+        .center-content{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 12px;
+            color:#333;
+            .child-content{
+                .sub-title{
+                    font-size: 10px;
+                }
+            }
+        }
+        .right-content{
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .support{
+                color:#969495;
+                margin-right: 10px;
+                i{
+                    color:#45c3d2;
+                    padding-right: 4px;
+                }
+                cursor: pointer;
+            }
+            .language-vn{
+                color:#969495;
+                padding: 6px;
+                margin: 2px;
+                cursor: pointer;
+                opacity:0.4;
+                &.active{
+                    opacity:1;
+                    color: #db1e18;
+                }
+                &:hover{
+                    opacity:0.7;
+                }
+                
+            }
+            .language-en{
+                color:#969495;
+                padding: 6px;
+                margin: 2px;
+                opacity:0.5;
+                cursor: pointer;
+                &.active{
+                    opacity:1;
+                    color:#f7d800;
+                }
+                &:hover{
+                    opacity:0.7;
+                }
+            }
+        }
+    }
+}
+
+// Banner
+
+.home-header-banner{
+    background: url("../../assets/Background.jpeg");
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: var(--height-home-header-banner);
+    .top-banner{
+        height: var(--height-top-banner);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(255, 255, 255, 0.1));
+        padding: 45px 0 70px 0;
+        color: #333;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .title-banner{
+            color: #fff;
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 1px #333;
+        }
+        .content-banner{
+            margin: 10px auto;
+            width: 40%;
+            min-width: 300px;
+            max-width: 458px;
+            position: relative;
+            z-index: 2;
+            min-height: 15vh;
+            .search-banner{
+                background: #f7d800;
+                color: #fff;
+                outline: none;
+                border-radius: 25px;
+                border: 1px solid transparent;
+                height: 50px;
+                padding-left: 50px;
+                padding-right: 25px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                i{
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    color: #333;
+                    text-align: center;
+                }
+                .input-search{
+                    background: transparent;
+                    outline: none;
+                    border: none;
+                    width: 100%;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+    .options-banner{
+        height: calc(var(--height-home-header-banner) - var(--height-top-banner));
+        background-image: linear-gradient(rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 1));
+        padding: 30px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .list-options{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            li{
+                padding: 5px;
+                margin:0;
+                .link-option{
+                    text-align: center;
+                    padding: 5px 5px;
+                    color: #333;
+                    display: inline-block;
+                    position: relative;
+                    font-size: 16px;
+                    font-weight: bold;
+                    min-width: 150px;
+                    text-decoration: none;
+                    &:hover{
+                        color:#45c3d2;
+                    }
+                }
+                .item-option{
+                    border-radius: 50%;
+                    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+                    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+                    box-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+                    width: 50px;
+                    height: 50px;
+                    margin: 2px auto;
+                    background-size: 32px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-color: #fff !important;
+                    &.option1{
+                        background: url("../../assets/chuyenkhoa.png");
+                        background-size: 32px;
+                        background-repeat: no-repeat;
+                            background-position: center;
+                    }
+                    &.option2{
+                        background: url("../../assets/khamtuxa.png");
+                        background-size: 32px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                    &.option3{
+                        background: url("../../assets/khamtongquat.png");
+                        background-size: 32px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                    &.option4{
+                        background: url("../../assets/dichvuxetnghiem.png");
+                        background-size: 32px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                    &.option5{
+                        background: url("../../assets/suckhoetinhthan.png");
+                        background-size: 32px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                    &.option6{
+                        background: url("../../assets/khamnhakhoa.png");
+                        background-size: 32px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                    &.option7{
+                        background: url("../../assets/phau-thuat.jpeg");
+                        background-size: 32px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                    &.option9{
+                        background: url("../../assets/lich-su.jpeg");
+                        background-size: 32px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                    &.option8{
+                        background: url("../../assets/khamtainha.png");
+                        background-size: 32px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                }
+               
+            }
+        }
+
+        
+    }
+}

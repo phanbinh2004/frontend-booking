@@ -1,0 +1,94 @@
+.customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  td,th{
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  tr:nth-child(even){background-color: #f2f2f2;}
+  tr:hover {background-color: #ddd;}
+  th{
+      padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+  }
+}
+button{
+  border:none;
+  background:transparent;
+  margin: 0 6px !important;
+  
+}
+.add{
+  margin-right: 10px;
+}
+
+
+/* CSS */
+.edit-user ,.delete-user,.create-user{
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.create-user{
+  background-color: #d83293
+}
+.edit-user{
+  background-color: #9ad736;
+}
+.delete-user{
+  background-color: #df1638;
+
+}
+.edit-user:hover,
+.edit-user:focus {
+    opacity: 0.8;
+}
+
+// CSS ModalUser
+// .modal-dialog{
+//   margin: 20% auto;
+//   .modal-content{
+//     min-height: 500px;
+//   }
+// }
+.modal{
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  .modal-content{
+    min-height: 350px;
+    min-width: 450px;
+  }
+  .btn{
+    width:60px;
+    align-items: center;
+  }
+  .form-row{
+    display: flex;
+    flex-wrap:wrap;
+  }
+}
