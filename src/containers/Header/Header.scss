@@ -8,6 +8,26 @@
     color: $common-text-color;
     height: 40px;
     position: relative;
+    .header-right-content{
+        display: flex;
+        align-items: center;
+        .languages{
+            margin-right: 30px;
+            .language-vi{
+                cursor: pointer;
+                margin-right: 15px;
+                &.active{
+                    color: #db1e18;
+                }
+            }
+            .language-en{
+                cursor: pointer;
+                &.active{
+                    color:#f7d800;
+                }
+            }
+        }
+    }
     .btn-logout {
         color: $common-text-color;
         line-height: 40px;
